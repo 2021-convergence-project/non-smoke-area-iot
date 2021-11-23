@@ -33,9 +33,6 @@ def on_message(client, userdata, msg):
     f = open(f'./img/output_{count}.jpg','wb')
     f.write(base64.b64decode(img))
     f.close()
-    file = open(f'./img/output_{count}.txt','wt')
-    file.write(str(payload))
-    file.close()
     count +=1
 
 
